@@ -2,10 +2,11 @@ import functools
 import re
 from typing import Optional
 
+import pandas
+
 import automol
 import autoreact
 import chemkin_io
-import pandas
 
 
 # Generic
