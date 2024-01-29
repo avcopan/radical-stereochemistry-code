@@ -162,5 +162,5 @@ cython_debug/
 # pixi environments
 .pixi
 
-# data for this project
-data/
+# graph files
+data/reactions/graphs/*.txt

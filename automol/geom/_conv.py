@@ -9,7 +9,6 @@ from pyparsing import pyparsing_common as ppc
 from phydat import phycon
 from automol import vmat
 from automol.extern import molfile, py3dmol_, rdkit_
-from automol.geom import _molsym
 from automol.geom.base import (
     central_angle,
     coordinates,
@@ -777,27 +776,6 @@ def ts_reacting_electron_direction(geo, tsg, key) -> vector.Vector:
             rvec = numpy.negative(rvec)
 
     return rvec
-
-
-def external_symmetry_factor(geo, chiral_center=True):
-    """Obtain the external symmetry factor for a geometry using MolSym
-
-    If requested, divides by the enantiomeric factor
-
-    :param geo: molecular geometry
-    :type geo: automol geometry data structure
-    :rtype: float
-    """
-
-    if is_atom(geo):
-        ext_sym_fac = 1.0
-    else:
-        pg_obj = _molsym.point_group_from_geometry(geo)
-        ext_sym_fac = _molsym.point_group_symmetry_number(pg_obj)
-        if _molsym.point_group_is_chiral(pg_obj) and chiral_center:
-            ext_sym_fac *= 0.5
-
-    return ext_sym_fac
 
 
 # # derived operations

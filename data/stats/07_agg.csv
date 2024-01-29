@@ -1,0 +1,11 @@
+,C6-7 Orig S,C6-7 NR Exp S,C6-7 Full Exp S,Pyro Orig S,Pyro NR Exp S,Pyro Full Exp S,C6-7 Orig R,C6-7 NR Exp R,C6-7 Full Exp R,Pyro Orig R,Pyro NR Exp R,Pyro Full Exp R
+Total,1676,2370,3907,309,420,450,3470,5661,8891,1118,1589,1723
+Stereo (any kind),1187,1881,3416,102,213,240,2407,4598,7828,417,888,1022
+Atom stereo,1046,1555,3090,24,28,55,1894,3228,6458,106,137,271
+Bond stereo,210,468,610,80,189,193,848,2269,3168,331,797,840
+No InChI,73,189,211,44,116,116,473,1353,1608,263,659,686
+Res. bond stereo,56,155,169,28,82,82,426,1260,1491,170,478,505
+Vin. bond stereo,17,34,42,16,34,34,47,93,117,98,192,192
+Fleeting stereo,,,,,,,773,1392,1704,327,559,578
+Fleeting atom stereo,,,,,,,769,1386,1698,309,540,559
+Fleeting bond stereo,,,,,,,4,6,6,18,19,19

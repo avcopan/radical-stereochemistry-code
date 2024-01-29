@@ -13,7 +13,7 @@ Level 1: No dependencies; no interdependencies
  - const
  - util
  - error
- - mult
+ - mul
  - formula
  - inchi_key
  - vmat
@@ -57,7 +57,6 @@ Level 5: L1-4 dependencies; hierarchical interdependency (descending)
  - combine
  - reac
  - rotors       [L5 dependencies: reac]
- - symm         [L5 dependencies: reac, rotor]
 """
 
 # L1
@@ -70,9 +69,11 @@ from automol import inchi_key
 from automol import vmat
 from automol import prop
 from automol import embed
+
 # L2
 # L3
 from automol import extern
+
 # L4
 from automol import graph
 from automol import geom
@@ -80,46 +81,48 @@ from automol import amchi
 from automol import inchi
 from automol import smiles
 from automol import zmat
+
 # L5
 from automol import etrans
 from automol import combine
 from automol import reac
 from automol import _deprecated
 from automol import data
-from automol import symm
+
 # type imports
 from automol.const import ReactionClass, ReactionSpin, ReactionInfo
 
 
 __all__ = [
     # L1
-    'const',
-    'util',
-    'error',
-    'mult',
-    'form',
-    'inchi_key',
-    'vmat',
-    'prop',
-    'embed',
+    "const",
+    "util",
+    "error",
+    "mult",
+    "form",
+    "inchi_key",
+    "vmat",
+    "prop",
+    "embed",
     # L2
     # L3
-    'extern',
+    "extern",
     # L4
-    'graph',
-    'geom',
-    'amchi',
-    'inchi',
-    'smiles',
-    'smiles',
-    'zmat',
+    "graph",
+    "geom",
+    "amchi",
+    "inchi",
+    "smiles",
+    "smiles",
+    "zmat",
     # L5
-    'etrans',
-    'combine',
-    'reac',
-    '_deprecated',
-    'data',
-    'symm',
+    "etrans",
+    "combine",
+    "reac",
+    "_deprecated",
+    "data",
     # type imports
-    'ReactionClass', 'ReactionSpin', 'ReactionInfo',
+    "ReactionClass",
+    "ReactionSpin",
+    "ReactionInfo",
 ]
